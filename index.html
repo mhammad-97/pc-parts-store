@@ -450,7 +450,7 @@ async function sbG(t){try{const r=await fetch(SB_URL+'/rest/v1/'+t+'?select=*&or
 async function sbU(t,d){try{await fetch(SB_URL+'/rest/v1/'+t,{method:'POST',headers:{...SBH,'Prefer':'resolution=merge-duplicates,return=minimal'},body:JSON.stringify(d)});}catch{}}
 async function sbD(t,id){try{await fetch(SB_URL+'/rest/v1/'+t+'?id=eq.'+id,{method:'DELETE',headers:SBH});}catch{}}
 
-let AP='admin123',SP='staff123';
+let AP='MHAMMAD97',SP='staff123';
 const CATS=[{id:'gpu',l:'كارت شاشة GPU',i:'🖥️'},{id:'cpu',l:'معالج CPU',i:'🔲'},{id:'ram',l:'رام RAM',i:'🧠'},{id:'ssd',l:'SSD',i:'⚡'},{id:'hdd',l:'هارد HDD',i:'💾'},{id:'motherboard',l:'لوحة أم',i:'🔌'},{id:'laptop',l:'لاب توب',i:'💻'},{id:'psu',l:'باور سبلاي',i:'🔋'},{id:'cooling',l:'تبريد',i:'❄️'},{id:'cables',l:'كابلات',i:'🔗'}];
 const CM=Object.fromEntries(CATS.map(c=>[c.id,c]));
 const COND={new:'جديد',good:'ممتاز',fair:'جيد'};
